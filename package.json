@@ -1,0 +1,15 @@
+{
+    "name": "hipoteca",
+    "scripts": {
+        "build": "tsup index.ts",
+        "build-comb": "tsup combinations.ts && node dist/combinations.js",
+        "dev": "tsup index.ts --watch",
+        "start": "node dist/index.js",
+        "live":"live-server"
+    },
+    "devDependencies": {
+        "live-server": "^1.2.2",
+        "tsup": "^8.2.4",
+        "typescript": "^5.6.2"
+    }
+}
